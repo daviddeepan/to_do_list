@@ -1,0 +1,30 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "Implementing the MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddeepan/to_do_list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviddeepan/to_do_list/issues"
+  },
+  "homepage": "https://github.com/daviddeepan/to_do_list#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  }
+}
